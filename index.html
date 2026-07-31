@@ -13,6 +13,7 @@
   </head>
   <body>
     <header class="site-header">
+      <!-- ИМЯ ВРАЧА: измените имя и подпись ниже. Чтобы скрыть: «Имя врача в шапке»: false. -->
       <a
         class="brand"
         data-editable-section="Имя врача в шапке"
@@ -21,11 +22,13 @@
         ><span class="brand-mark" aria-hidden="true">✦</span
         ><span>Анна Мельникова<small>частный ветеринар</small></span></a
       >
+      <!-- МЕНЮ: измените названия ссылок ниже. Чтобы скрыть всё меню: «Меню в шапке»: false. -->
       <nav data-editable-section="Меню в шапке" aria-label="Основная навигация">
         <a href="#about">Обо мне</a><a href="#services">Услуги</a
         ><a href="#contacts">Контакты</a>
       </nav>
       <div class="header-contacts">
+        <!-- ГОРОД И ТЕЛЕФОН: измените текст «Москва» и номер после href="tel:". Чтобы скрыть: «Город в шапке»: false или «Телефон в шапке»: false. -->
         <span class="header-city" data-editable-section="Город в шапке"
           >Москва</span
         ><a
@@ -39,29 +42,31 @@
           data-editable-section="Мессенджеры в шапке"
         >
           <summary>Связаться в мессенджере</summary>
-          <!-- Ссылки на мессенджеры меняются в понятном блоке «КОНТАКТЫ ДЛЯ СВЯЗИ» внизу файла. -->
+          <!-- МЕССЕНДЖЕРЫ: меняйте адрес после href= прямо в строке нужного мессенджера.
+               Примеры: Telegram — https://t.me/ваш_ник; WhatsApp — https://wa.me/79991234567 (номер без + и пробелов);
+               MAX и VK — полная ссылка на страницу врача. Чтобы скрыть мессенджер, поставьте false у его названия в списке «ЧТО ПОКАЗЫВАТЬ НА САЙТЕ» внизу файла. -->
           <div class="messenger-links" aria-label="Выберите мессенджер">
             <a
               data-editable-section="Telegram"
-              data-messenger="Telegram"
+              href="https://t.me/anna_vet_example"
               target="_blank"
               rel="noopener noreferrer"
               >Telegram</a
             ><a
               data-editable-section="WhatsApp"
-              data-messenger="WhatsApp"
+              href="https://wa.me/79990000000"
               target="_blank"
               rel="noopener noreferrer"
               >WhatsApp</a
             ><a
               data-editable-section="MAX"
-              data-messenger="MAX"
+              href="https://max.ru/anna_vet_example"
               target="_blank"
               rel="noopener noreferrer"
               >MAX</a
             ><a
               data-editable-section="VK Мессенджер"
-              data-messenger="VK Мессенджер"
+              href="https://vk.me/anna_vet_example"
               target="_blank"
               rel="noopener noreferrer"
               >VK Мессенджер</a
@@ -71,6 +76,7 @@
       </div>
     </header>
     <main id="top">
+      <!-- СРОЧНЫЙ ВЫЕЗД: измените все тексты внутри этого блока. Чтобы скрыть весь блок: «Срочный выезд на дом»: false. -->
       <section
         class="urgent-visit"
         data-editable-section="Срочный выезд на дом"
@@ -83,14 +89,17 @@
           >
             <span></span>Срочный выезд на дом
           </p>
+          <!-- ЗАГОЛОВОК: можно изменить. Чтобы скрыть: «Заголовок срочного выезда»: false. -->
           <h2 data-editable-section="Заголовок срочного выезда">
             Нужна помощь<br />сегодня?
           </h2>
+          <!-- ОПИСАНИЕ: можно изменить. Чтобы скрыть: «Текст срочного выезда»: false. -->
           <p data-editable-section="Текст срочного выезда">
             Позвоните или напишите врачу — подберём ближайшее возможное время
             для выезда.
           </p>
         </div>
+        <!-- КНОПКА ЗВОНКА: измените номер после href="tel:". Чтобы скрыть: «Кнопка звонка срочного выезда»: false. -->
         <div class="urgent-actions">
           <a
             class="button button-primary"
@@ -103,29 +112,31 @@
             data-editable-section="Мессенджеры срочного выезда"
           >
             <summary>Связаться в мессенджере</summary>
-            <!-- Ссылки на мессенджеры меняются в понятном блоке «КОНТАКТЫ ДЛЯ СВЯЗИ» внизу файла. -->
+            <!-- МЕССЕНДЖЕРЫ: меняйте адрес после href= прямо в строке нужного мессенджера.
+                 Примеры: Telegram — https://t.me/ваш_ник; WhatsApp — https://wa.me/79991234567 (номер без + и пробелов);
+                 MAX и VK — полная ссылка на страницу врача. Чтобы скрыть мессенджер, поставьте false у его названия в списке «ЧТО ПОКАЗЫВАТЬ НА САЙТЕ» внизу файла. -->
             <div class="messenger-links" aria-label="Выберите мессенджер">
               <a
                 data-editable-section="Telegram"
-                data-messenger="Telegram"
+                href="https://t.me/anna_vet_example"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Telegram</a
               ><a
                 data-editable-section="WhatsApp"
-                data-messenger="WhatsApp"
+                href="https://wa.me/79990000000"
                 target="_blank"
                 rel="noopener noreferrer"
                 >WhatsApp</a
               ><a
                 data-editable-section="MAX"
-                data-messenger="MAX"
+                href="https://max.ru/anna_vet_example"
                 target="_blank"
                 rel="noopener noreferrer"
                 >MAX</a
               ><a
                 data-editable-section="VK Мессенджер"
-                data-messenger="VK Мессенджер"
+                href="https://vk.me/anna_vet_example"
                 target="_blank"
                 rel="noopener noreferrer"
                 >VK Мессенджер</a
@@ -136,16 +147,20 @@
       </section>
       <section class="hero section-shell">
         <div class="hero-copy">
+          <!-- ПОДПИСЬ: можно изменить. Чтобы скрыть: «Подпись на главном экране»: false. -->
           <p class="eyebrow" data-editable-section="Подпись на главном экране">
             <span></span>Внимательная помощь рядом
           </p>
+          <!-- ГЛАВНЫЙ ЗАГОЛОВОК: можно изменить. Чтобы скрыть: «Главный заголовок»: false. -->
           <h1 data-editable-section="Главный заголовок">
             Забота, которую ваш питомец почувствует.
           </h1>
+          <!-- ОПИСАНИЕ: можно изменить. Чтобы скрыть: «Текст на главном экране»: false. -->
           <p class="lead" data-editable-section="Текст на главном экране">
             Принимаю кошек и собак бережно, без спешки и лишнего стресса.
             Объясняю всё человеческим языком — чтобы вы понимали каждый шаг.
           </p>
+          <!-- КНОПКИ: можно изменить текст. Чтобы скрыть кнопку: «Кнопка записи»: false или «Ссылка на услуги»: false. -->
           <div class="hero-actions">
             <a
               class="button button-primary"
@@ -159,11 +174,13 @@
               >Посмотреть услуги</a
             >
           </div>
+          <!-- ГРАФИК: измените часы работы. Чтобы скрыть: «График работы»: false. -->
           <div class="hero-note" data-editable-section="График работы">
             <span class="status-dot"></span
             ><span>Отвечаю ежедневно с 9:00 до 21:00</span>
           </div>
         </div>
+        <!-- ФОТО: замените файл в папке assets. Чтобы скрыть: «Фото на главном экране»: false. -->
         <div
           class="hero-photo-wrap"
           data-editable-section="Фото на главном экране"
@@ -177,6 +194,7 @@
           <p class="photo-caption">Бережно. Понятно. По делу.</p>
         </div>
       </section>
+      <!-- ЦИФРЫ И ПРЕИМУЩЕСТВА: изменяйте текст внутри карточек. Чтобы скрыть карточку, поставьте false у её названия: «8 лет практики», «2 000+ пациентов» или «Без очередей». -->
       <section class="trust-strip" aria-label="Ключевые преимущества">
         <div data-editable-section="8 лет практики">
           <strong>8 лет</strong><span>ветеринарной практики</span>
@@ -188,6 +206,7 @@
           <strong>Без очередей</strong><span>приём только по записи</span>
         </div>
       </section>
+      <!-- РАЗДЕЛ «ОБО МНЕ»: изменяйте заголовок и текст ниже. Чтобы скрыть часть: поставьте false у её названия в списке внизу файла. -->
       <section class="about section-shell" id="about">
         <p class="eyebrow" data-editable-section="Подпись «Обо мне»">
           <span></span>Немного обо мне
@@ -212,6 +231,7 @@
           </div>
         </div>
       </section>
+      <!-- ЗАГОЛОВОК УСЛУГ: можно изменить. Чтобы скрыть: «Заголовок раздела услуг»: false. -->
       <section class="services section-shell" id="services">
         <div
           class="section-heading"
@@ -228,6 +248,7 @@
         </div>
         <div class="service-grid">
           <!-- УСЛУГИ: чтобы скрыть вакцинацию, анализы или домашний визит, измените true на false в понятном списке внизу файла. -->
+          <!-- ПЕРВИЧНЫЙ ПРИЁМ: измените название, описание и цену. Чтобы скрыть: «Первичный приём»: false. -->
           <article
             class="service-card featured"
             data-editable-section="Первичный приём"
@@ -237,12 +258,14 @@
             <p>Осмотр, консультация, рекомендации по здоровью и уходу.</p>
             <span class="card-price">от 2 000 ₽</span>
           </article>
+          <!-- ВАКЦИНАЦИЯ: измените название, описание и цену. Чтобы скрыть: «Вакцинация»: false. -->
           <article class="service-card" data-editable-section="Вакцинация">
             <span class="card-number">02</span>
             <h3>Вакцинация</h3>
             <p>Подбор вакцины, осмотр перед процедурой, отметка в паспорте.</p>
             <span class="card-price">от 1 500 ₽</span>
           </article>
+          <!-- АНАЛИЗЫ И ДИАГНОСТИКА: измените название, описание и цену. Чтобы скрыть: «Анализы и диагностика»: false. -->
           <article
             class="service-card"
             data-editable-section="Анализы и диагностика"
@@ -255,6 +278,7 @@
             </p>
             <span class="card-price">по назначению</span>
           </article>
+          <!-- ДОМАШНИЙ ВИЗИТ: измените название, описание и цену. Чтобы скрыть: «Домашний визит»: false. -->
           <article class="service-card" data-editable-section="Домашний визит">
             <span class="card-number">04</span>
             <h3>Домашний визит</h3>
@@ -270,6 +294,7 @@
           4. Внизу файла, в списке «ЧТО ПОКАЗЫВАТЬ НА САЙТЕ», добавьте это же название и поставьте true.
         --></div>
       </section>
+      <!-- КОНТАКТЫ: изменяйте текст и данные ниже. Чтобы скрыть левую часть: «Текст раздела контактов»: false; правую карточку: «Карточка контактов»: false. -->
       <section class="callout section-shell" id="contacts">
         <div data-editable-section="Текст раздела контактов">
           <p class="eyebrow eyebrow-light"><span></span>Запись на приём</p>
@@ -290,6 +315,7 @@
         </div>
       </section>
     </main>
+    <!-- НИЖНЯЯ СТРОКА: измените текст. Чтобы скрыть: «Подвал сайта»: false. -->
     <footer class="site-footer" data-editable-section="Подвал сайта">
       <span>© 2026 Анна Мельникова</span
       ><span>Сделано с заботой о хвостиках</span>
@@ -334,22 +360,6 @@
         "Карточка контактов": true,
         "Подвал сайта": true,
       };
-
-      // КОНТАКТЫ ДЛЯ СВЯЗИ
-      // Меняйте только ссылку в кавычках справа от двоеточия.
-      // Telegram: https://t.me/ваш_ник
-      // WhatsApp: https://wa.me/79991234567 (номер без «+», пробелов и скобок)
-      // MAX и VK: вставьте полную ссылку на страницу врача.
-      const messengerLinks = {
-        Telegram: "https://t.me/anna_vet_example",
-        WhatsApp: "https://wa.me/79990000000",
-        MAX: "https://max.ru/anna_vet_example",
-        "VK Мессенджер": "https://vk.me/anna_vet_example",
-      };
-
-      document.querySelectorAll("[data-messenger]").forEach((link) => {
-        link.href = messengerLinks[link.dataset.messenger];
-      });
 
       document
         .querySelectorAll("[data-editable-section]")
