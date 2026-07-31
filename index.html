@@ -43,5 +43,11 @@
     </section>
   </main>
   <footer class="site-footer"><span>© 2026 Анна Мельникова</span><span>Сделано с заботой о хвостиках</span></footer>
+  <script>
+    document.addEventListener('click', (event) => {
+      const messengerMenu = document.querySelector('.messenger-menu');
+      if (messengerMenu?.open && !messengerMenu.contains(event.target)) messengerMenu.open = false;
+    });
+  </script>
 </body>
 </html>
