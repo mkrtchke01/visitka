@@ -39,29 +39,29 @@
           data-editable-section="Мессенджеры в шапке"
         >
           <summary>Связаться в мессенджере</summary>
-          <!-- Тестовые контакты: замените anna_vet_example на ник врача, а 79990000000 — на номер WhatsApp в международном формате, без «+». -->
+          <!-- Ссылки на мессенджеры меняются в понятном блоке «КОНТАКТЫ ДЛЯ СВЯЗИ» внизу файла. -->
           <div class="messenger-links" aria-label="Выберите мессенджер">
             <a
               data-editable-section="Telegram"
-              href="https://t.me/anna_vet_example"
+              data-messenger="Telegram"
               target="_blank"
               rel="noopener noreferrer"
               >Telegram</a
             ><a
               data-editable-section="WhatsApp"
-              href="https://wa.me/79990000000"
+              data-messenger="WhatsApp"
               target="_blank"
               rel="noopener noreferrer"
               >WhatsApp</a
             ><a
               data-editable-section="MAX"
-              href="https://max.ru/anna_vet_example"
+              data-messenger="MAX"
               target="_blank"
               rel="noopener noreferrer"
               >MAX</a
             ><a
               data-editable-section="VK Мессенджер"
-              href="https://vk.me/anna_vet_example"
+              data-messenger="VK Мессенджер"
               target="_blank"
               rel="noopener noreferrer"
               >VK Мессенджер</a
@@ -103,29 +103,29 @@
             data-editable-section="Мессенджеры срочного выезда"
           >
             <summary>Связаться в мессенджере</summary>
-            <!-- Тестовые контакты: замените anna_vet_example на ник врача, а 79990000000 — на номер WhatsApp в международном формате, без «+». -->
+            <!-- Ссылки на мессенджеры меняются в понятном блоке «КОНТАКТЫ ДЛЯ СВЯЗИ» внизу файла. -->
             <div class="messenger-links" aria-label="Выберите мессенджер">
               <a
                 data-editable-section="Telegram"
-                href="https://t.me/anna_vet_example"
+                data-messenger="Telegram"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Telegram</a
               ><a
                 data-editable-section="WhatsApp"
-                href="https://wa.me/79990000000"
+                data-messenger="WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
                 >WhatsApp</a
               ><a
                 data-editable-section="MAX"
-                href="https://max.ru/anna_vet_example"
+                data-messenger="MAX"
                 target="_blank"
                 rel="noopener noreferrer"
                 >MAX</a
               ><a
                 data-editable-section="VK Мессенджер"
-                href="https://vk.me/anna_vet_example"
+                data-messenger="VK Мессенджер"
                 target="_blank"
                 rel="noopener noreferrer"
                 >VK Мессенджер</a
@@ -334,6 +334,23 @@
         "Карточка контактов": true,
         "Подвал сайта": true,
       };
+
+      // КОНТАКТЫ ДЛЯ СВЯЗИ
+      // Меняйте только ссылку в кавычках справа от двоеточия.
+      // Telegram: https://t.me/ваш_ник
+      // WhatsApp: https://wa.me/79991234567 (номер без «+», пробелов и скобок)
+      // MAX и VK: вставьте полную ссылку на страницу врача.
+      const messengerLinks = {
+        Telegram: "https://t.me/anna_vet_example",
+        WhatsApp: "https://wa.me/79990000000",
+        MAX: "https://max.ru/anna_vet_example",
+        "VK Мессенджер": "https://vk.me/anna_vet_example",
+      };
+
+      document.querySelectorAll("[data-messenger]").forEach((link) => {
+        link.href = messengerLinks[link.dataset.messenger];
+      });
+
       document
         .querySelectorAll("[data-editable-section]")
         .forEach((section) => {
