@@ -92,7 +92,7 @@ nav a:hover,
 .messenger-menu {
   position: relative;
 }
-.messenger-menu summary {
+.messenger-menu:not(.button-contact-menu) summary {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -104,10 +104,10 @@ nav a:hover,
   font-weight: 700;
   list-style: none;
 }
-.messenger-menu summary::-webkit-details-marker {
+.messenger-menu:not(.button-contact-menu) summary::-webkit-details-marker {
   display: none;
 }
-.messenger-menu summary::after {
+.messenger-menu:not(.button-contact-menu) summary::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -115,7 +115,7 @@ nav a:hover,
   border-bottom: 1px solid currentColor;
   transform: translateY(-2px) rotate(45deg);
 }
-.messenger-menu[open] summary::after {
+.messenger-menu:not(.button-contact-menu)[open] summary::after {
   transform: translateY(2px) rotate(225deg);
 }
 .messenger-links {
@@ -139,6 +139,22 @@ nav a:hover,
 .messenger-links a:hover {
   color: var(--accent);
   background: var(--paper);
+}
+.button-contact-menu summary.button {
+  cursor: pointer;
+  list-style: none;
+}
+.button-contact-menu summary.button::-webkit-details-marker {
+  display: none;
+}
+.button-contact-menu .messenger-links {
+  right: auto;
+  left: 0;
+  min-width: 100%;
+}
+.button-contact-menu .messenger-links a:first-child {
+  color: var(--ink);
+  font-weight: 700;
 }
 .urgent-visit {
   max-width: 1184px;

@@ -162,12 +162,45 @@
           </p>
           <!-- КНОПКИ: можно изменить текст. Чтобы скрыть кнопку: «Кнопка записи»: false или «Ссылка на услуги»: false. -->
           <div class="hero-actions">
-            <a
-              class="button button-primary"
+            <!-- ЗАПИСЬ: при нажатии открывается список звонка и мессенджеров. Ссылки мессенджеров меняются прямо ниже по примеру. -->
+            <details
+              class="messenger-menu button-contact-menu"
               data-editable-section="Кнопка записи"
-              href="tel:+79990000000"
-              >Записаться на приём <span>→</span></a
-            ><a
+            >
+              <summary class="button button-primary">
+                Записаться на приём <span>→</span>
+              </summary>
+              <!-- МЕССЕНДЖЕРЫ: меняйте адрес после href= прямо в строке нужного мессенджера. Примеры: Telegram — https://t.me/ваш_ник; WhatsApp — https://wa.me/79991234567. -->
+              <div class="messenger-links" aria-label="Выберите способ связи">
+                <a href="tel:+79990000000">Позвонить врачу</a>
+                <a
+                  data-editable-section="Telegram"
+                  href="https://t.me/anna_vet_example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Telegram</a
+                ><a
+                  data-editable-section="WhatsApp"
+                  href="https://wa.me/79990000000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp</a
+                ><a
+                  data-editable-section="MAX"
+                  href="https://max.ru/anna_vet_example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >MAX</a
+                ><a
+                  data-editable-section="VK Мессенджер"
+                  href="https://vk.me/anna_vet_example"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >VK Мессенджер</a
+                >
+              </div>
+            </details>
+            <a
               class="text-link"
               data-editable-section="Ссылка на услуги"
               href="#services"
@@ -309,9 +342,44 @@
             >hello@anna-vet.ru</a
           >
           <p>Москва, район Хамовники<br />Приём по предварительной записи</p>
-          <a class="button button-light" href="tel:+79990000000"
-            >Позвонить Анне <span>→</span></a
-          >
+          <!-- КНОПКА СВЯЗИ: при нажатии открывается список звонка и мессенджеров. -->
+          <details class="messenger-menu button-contact-menu">
+            <summary class="button button-light">
+              Позвонить Анне <span>→</span>
+            </summary>
+            <!-- МЕССЕНДЖЕРЫ: меняйте адрес после href= прямо в строке нужного мессенджера. Примеры: Telegram — https://t.me/ваш_ник; WhatsApp — https://wa.me/79991234567. -->
+            <div class="messenger-links" aria-label="Выберите способ связи">
+              <a href="tel:+79990000000">Позвонить врачу</a>
+              <a
+                data-editable-section="Telegram"
+                href="https://t.me/anna_vet_example"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Telegram</a
+              >
+              <a
+                data-editable-section="WhatsApp"
+                href="https://wa.me/79990000000"
+                target="_blank"
+                rel="noopener noreferrer"
+                >WhatsApp</a
+              >
+              <a
+                data-editable-section="MAX"
+                href="https://max.ru/anna_vet_example"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MAX</a
+              >
+              <a
+                data-editable-section="VK Мессенджер"
+                href="https://vk.me/anna_vet_example"
+                target="_blank"
+                rel="noopener noreferrer"
+                >VK Мессенджер</a
+              >
+            </div>
+          </details>
         </div>
       </section>
     </main>
