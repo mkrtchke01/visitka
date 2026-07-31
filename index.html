@@ -13,7 +13,7 @@
     <div class="header-contacts"><span class="header-city">Москва</span><a class="header-phone" href="tel:+79990000000">+7 999 000-00-00</a><details class="messenger-menu"><summary>Связаться в мессенджере</summary><!-- Тестовые контакты: замените anna_vet_example на ник врача, а 79990000000 — на номер WhatsApp в международном формате, без «+». --><div class="messenger-links" aria-label="Выберите мессенджер"><a href="https://t.me/anna_vet_example" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://wa.me/79990000000" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://max.ru/anna_vet_example" target="_blank" rel="noopener noreferrer">MAX</a><a href="https://vk.me/anna_vet_example" target="_blank" rel="noopener noreferrer">VK Мессенджер</a></div></details></div>
   </header>
   <main id="top">
-    <section class="urgent-visit" data-editable-section="urgentHomeVisit" aria-label="Срочный выезд на дом">
+    <section class="urgent-visit" data-editable-section="Срочный выезд на дом" aria-label="Срочный выезд на дом">
       <div class="urgent-visit-copy"><p class="eyebrow eyebrow-light"><span></span>Срочный выезд на дом</p><h2>Нужна помощь<br>сегодня?</h2><p>Позвоните или напишите врачу — подберём ближайшее возможное время для выезда.</p></div>
       <div class="urgent-actions"><a class="button button-primary" href="tel:+79990000000">Позвонить врачу <span>→</span></a><details class="messenger-menu"><summary>Связаться в мессенджере</summary><!-- Тестовые контакты: замените anna_vet_example на ник врача, а 79990000000 — на номер WhatsApp в международном формате, без «+». --><div class="messenger-links" aria-label="Выберите мессенджер"><a href="https://t.me/anna_vet_example" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://wa.me/79990000000" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://max.ru/anna_vet_example" target="_blank" rel="noopener noreferrer">MAX</a><a href="https://vk.me/anna_vet_example" target="_blank" rel="noopener noreferrer">VK Мессенджер</a></div></details></div>
     </section>
@@ -34,11 +34,13 @@
     </section>
     <section class="services section-shell" id="services">
       <div class="section-heading"><div><p class="eyebrow"><span></span>Чем могу помочь</p><h2>Всё необходимое —<br>в одном спокойном визите.</h2></div><p>Стоимость и длительность подскажу до записи. Никаких неожиданностей после приёма.</p></div>
-      <div class="service-grid"><!-- Чтобы добавить услугу, скопируйте любую карточку article ниже. Существующие услуги можно включать и выключать в настройках внизу файла. -->
+      <div class="service-grid">
+        <!-- УСЛУГИ: чтобы скрыть вакцинацию, анализы или домашний визит, измените true на false в понятном списке внизу файла. -->
         <article class="service-card featured"><span class="card-number">01</span><h3>Первичный приём</h3><p>Осмотр, консультация, рекомендации по здоровью и уходу.</p><span class="card-price">от 2 000 ₽</span></article>
-        <article class="service-card" data-editable-section="vaccination"><span class="card-number">02</span><h3>Вакцинация</h3><p>Подбор вакцины, осмотр перед процедурой, отметка в паспорте.</p><span class="card-price">от 1 500 ₽</span></article>
-        <article class="service-card" data-editable-section="diagnostics"><span class="card-number">03</span><h3>Анализы и диагностика</h3><p>Забор анализов и направление на исследования, когда это действительно нужно.</p><span class="card-price">по назначению</span></article>
-        <article class="service-card" data-editable-section="homeVisit"><span class="card-number">04</span><h3>Домашний визит</h3><p>Для питомцев, которым тяжело в дороге, и для вашего спокойствия.</p><span class="card-price">от 3 500 ₽</span></article>
+        <article class="service-card" data-editable-section="Вакцинация"><span class="card-number">02</span><h3>Вакцинация</h3><p>Подбор вакцины, осмотр перед процедурой, отметка в паспорте.</p><span class="card-price">от 1 500 ₽</span></article>
+        <article class="service-card" data-editable-section="Анализы и диагностика"><span class="card-number">03</span><h3>Анализы и диагностика</h3><p>Забор анализов и направление на исследования, когда это действительно нужно.</p><span class="card-price">по назначению</span></article>
+        <article class="service-card" data-editable-section="Домашний визит"><span class="card-number">04</span><h3>Домашний визит</h3><p>Для питомцев, которым тяжело в дороге, и для вашего спокойствия.</p><span class="card-price">от 3 500 ₽</span></article>
+        <!-- НОВАЯ УСЛУГА: скопируйте любую карточку услуги выше, вставьте копию перед этой строкой и измените в ней название, описание и цену. -->
       </div>
     </section>
     <section class="callout section-shell" id="contacts">
@@ -48,8 +50,8 @@
   </main>
   <footer class="site-footer"><span>© 2026 Анна Мельникова</span><span>Сделано с заботой о хвостиках</span></footer>
   <script>
-    // Редактирование разделов: true — показать, false — скрыть.
-    const editableSections = { urgentHomeVisit: true, vaccination: true, diagnostics: true, homeVisit: true };
+    // ВИДИМОСТЬ БЛОКОВ: true — показать, false — скрыть.
+    const editableSections = { "Срочный выезд на дом": true, "Вакцинация": true, "Анализы и диагностика": true, "Домашний визит": true };
     document.querySelectorAll('[data-editable-section]').forEach((section) => {
       section.hidden = editableSections[section.dataset.editableSection] === false;
     });
